@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 .clear {
 	clear:both;
 }
@@ -36,8 +38,13 @@
 	color:black;
 	font-size: 25px;
 	border-bottom: 1px solid #dfdfdf;
+	font-family: sinanova, serif;
 }
 
 hr {
 	clear:both;
+}
+
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
 }
