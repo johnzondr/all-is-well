@@ -3,6 +3,13 @@ class QuotesController < ApplicationController
 		@quote = Quote.order("RANDOM()").first
 	end
 
+  def show
+    @quote = Quote.where(:id => params[:id]).first
+    if @quote.blank?
+      render :text => "Not found", :status => :not_found
+    end
+  end
+
 
 
   def create
